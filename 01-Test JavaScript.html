@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Teste JavaScript</title>
+        <script>
+            function mensagem(){
+                var elemento = document.getElementById("campo");
+                var elemento2 = document.getElementsByTagName("h1")[0];
+                var elemento3 = document.getElementsByTagName("h1")[1];
+                var elemento4 = document.getElementsByTagName("h1")[2];
+               
+                elemento2.innerHTML = elemento.value;
+                elemento3.innerHTML= elemento.value.toLowerCase();
+                elemento4.innerHTML= elemento.value.toUpperCase();
+            
+                elemento2.style.textAlign="center";
+                elemento2.style.color = "red";
+                elemento2.style.fontSize ="30px";
+                elemento3.style.textAlign="center";
+                elemento3.style.color = "blue";
+                elemento3.style.fontSize ="30px";
+                elemento4.style.textAlign="center";
+                elemento4.style.color = "green";
+                elemento4.style.fontSize ="30px";
+                
+            }
+        
+        </script>
+    </head>
+    
+        <input onKeyUp="mensagem()" id ="campo"/><br/>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Evento Teclado</title>
+        <script>
+        /* 
+        onKeyUp: Exibe o caractere e depois executa a ação
+        onKeyDonw: Executa primeiro a ação e depois o caractere
+        onKeyPress: Executa primeiro a ação e depois o caractere
+        
+        o onKeyPress não tem suporte as seguintes teclas F1..F2, ALT, CTRL, SHIFT...
+        
+        */
+            
+            function mensagem(){
+                var texto = document.getElementById("campo").value;
+                alert(texto);
+            }
+        </script>
+    </head>
+    <body> 
+        <input type="text" id="campo" onKeyUp="mensagem()"/>
+    
+    </body>
+    
+</html>

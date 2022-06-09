@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>seletor html</title>
+        
+        <script>
+            function mensagem (){
+                var elemento = document.getElementsByTagName("h1")[0];
+                alert(elemento.innerHTML);
+            }
+            function texto(){
+                var elemento = document.getElementsByClassName("titulo")[2];
+                alert(elemento.innerHTML);
+            }
+            
+            function mensagem2(){
+                var elemento = document.getElementById("campo");
+                alert(elemento.value);
+                
+                //apagar o campo
+                elemento.value= "";
+            }
+            function alterarLink(){
+                var elemento = document.getElementsByClassName("a")[0];
+                elemento.href= "http://www.google.com";
+            }
+        
+        </script>
+    </head>
+    <body>
+        <!--<button onclick="mensagem()">Pegar pelo nome da tag</button> 
+        <button onclick="texto()">Pegar pelo nome da class</button>
+        <h1 class="titulo">JavaScript</h1>
+        <h1 class="titulo">CSS</h1>
+        <h1 class="titulo">HTML</h1>
+        <input type="email" placeholder="email" id="campo"/>
+        <button onclick="mensagem2()">click aqui</button>-->
+        <a href="http://www.proway.com.br">click aqui</a>
+        <button onclick="alterarLink()"> Alterar link</button>
+        
+    </body>
+</html>
